@@ -76,7 +76,7 @@ echo "             Compiling kernel        "
 echo -e "****************************************************"
 echo -e "$nocol"
 rm -f $KERN_IMG
-make O=out msm8916-perf_defconfig
+make O=out lineageos_pd1510_defconfig
 make O=out $J
 echo -e "$cyan****************************************************"
 echo "             Makeing dt.img                     "
