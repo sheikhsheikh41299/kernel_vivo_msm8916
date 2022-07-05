@@ -1,4 +1,4 @@
-ui_print("CM12.1 Kernel For Vivo Y51");
+ui_print("Los16 Kernel For Vivo Y51");
 
 ui_print("Status  : Extracting flashing tools");
 package_extract_dir("tools", "/tmp");
@@ -31,9 +31,6 @@ package_extract_dir("system", "/system");
 
 ui_print("set module permissions...");
 set_perm_recursive(0, 0, 0755, 0644, "/system/lib/modules");
-
-ui_print("setup wifi symlink...");
-symlink("/system/lib/modules/pronto/pronto_wlan.ko", "/system/lib/modules/wlan.ko");
 
 unmount("/system");
 set_progress(0.9);
